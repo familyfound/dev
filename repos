@@ -1,12 +1,6 @@
-familyfound/familyfound
-familyfound/boxes
-familyfound/promise
-familyfound/chrome-ext
-familyfound/todo
-familyfound/promise
-familyfound/domlog
-familyfound/ffapi
-familyfound/ng-bootstrap
+familyfound/familysearch
+familyfound/fsauth
 familyfound/fan
-familyfound/new-todo
-familyfound/todo-list
+familyfound/backend
+familyfound/todo-person
+familyfound/ffapi
