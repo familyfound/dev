@@ -1,6 +1,7 @@
 familyfound/familysearch
 familyfound/fsauth
 familyfound/fan
-familyfound/backend
+familyfound/api
+familyfound/main
 familyfound/todo-person
 familyfound/ffapi

@@ -4,6 +4,12 @@ toget := $(shell cat repos | tr '\n' ' ')
 
 setup: clone link
 
+# makes the links into the parent directory
+just-cloned:
+	@ln -s dev/Makefile ../Makefile
+	@ln -s dev/repos ../repos
+	@ln -s dev/setup.js ../make.js
+
 clone:
 	@for repo in $(toget); do\
 		if [ -d `echo $$repo | sed 's/[^/]*\///'` ];\
