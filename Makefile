@@ -23,7 +23,11 @@ clone:
 link:
 	@for dir in $(repos); do\
 	    zsh -c 'echo -e "\e[32m--> '$$dir'\e[0m"';\
-		cd $$dir && npm link; cd ../; \
+		cd $$dir;\
+		if [ -f package.json ]; then\
+			npm link;\
+		fi;\
+		cd ../; \
 	done
 	@for dir in $(repos); do\
 	    zsh -c 'echo -e "\e[32m--> '$$dir'\e[0m"';\
@@ -33,6 +37,7 @@ link:
 				npm link $$sub;\
 			fi;\
 		done;\
+		cd ../;\
 	done
 
 component-reinstall:
